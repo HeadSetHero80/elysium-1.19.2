@@ -1,0 +1,131 @@
+{
+  "block.electrode.zap": {
+    "sounds": [
+      "elysium:block/electrode/zap_1",
+      "elysium:block/electrode/zap_2",
+      "elysium:block/electrode/zap_3",
+      "elysium:block/electrode/zap_4"
+    ],
+    "subtitle": "subtitles.elysium.block.electrode.zap"
+  },
+  "block.elysium.place": {
+    "sounds": [
+      "elysium:block/elysium/place_1",
+      "elysium:block/elysium/place_2",
+      "elysium:block/elysium/place_3",
+      "elysium:block/elysium/place_4"
+    ],
+    "subtitle": "subtitles.elysium.block.generic.place"
+  },
+  "block.elysium.break": {
+    "sounds": [
+      "elysium:block/elysium/place_1",
+      "elysium:block/elysium/place_2",
+      "elysium:block/elysium/place_3",
+      "elysium:block/elysium/place_4"
+    ],
+    "subtitle": "subtitles.elysium.block.generic.break"
+  },
+  "block.elysium.step": {
+    "sounds": [
+      "elysium:block/elysium/step_1",
+      "elysium:block/elysium/step_2",
+      "elysium:block/elysium/step_3",
+      "elysium:block/elysium/step_4",
+      "elysium:block/elysium/step_5",
+      "elysium:block/elysium/step_6"
+    ],
+    "subtitle": "subtitles.elysium.block.generic.footsteps"
+  },
+  "block.elysium.hit": {
+    "sounds": [
+      "elysium:block/elysium/step_1",
+      "elysium:block/elysium/step_2",
+      "elysium:block/elysium/step_3",
+      "elysium:block/elysium/step_4",
+      "elysium:block/elysium/step_5",
+      "elysium:block/elysium/step_6"
+    ],
+    "subtitle": "subtitles.elysium.block.generic.hit"
+  },
+  "block.elysium.fall": {
+    "sounds": [
+      "elysium:block/elysium/step_1",
+      "elysium:block/elysium/step_2",
+      "elysium:block/elysium/step_3",
+      "elysium:block/elysium/step_4",
+      "elysium:block/elysium/step_5",
+      "elysium:block/elysium/step_6"
+    ],
+    "subtitle": "subtitles.elysium.block.elysium.land"
+  },
+  "block.elysium_machine.place": {
+    "sounds": [
+      "elysium:block/elysium_machine/place_1",
+      "elysium:block/elysium_machine/place_2",
+      "elysium:block/elysium_machine/place_3",
+      "elysium:block/elysium_machine/place_4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.elysium_prism.place": {
+    "sounds": [
+      "elysium:block/elysium_prism/place_1",
+      "elysium:block/elysium_prism/place_2",
+      "elysium:block/elysium_prism/place_3",
+      "elysium:block/elysium_prism/place_4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.elysium_prism.break": {
+    "sounds": [
+      "elysium:block/elysium_prism/place_1",
+      "elysium:block/elysium_prism/place_2",
+      "elysium:block/elysium_prism/place_3",
+      "elysium:block/elysium_prism/place_4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.elysium_prism.loop": {
+    "sounds": [
+      "elysium:block/elysium_prism/loop"
+    ],
+    "subtitle": "subtitles.elysium.block.elysium_prism.loop"
+  },
+  "item.cheirosiphon.deactivate": {
+    "sounds": [
+      "elysium:item/cheirosiphon/deactivate"
+    ],
+    "subtitle": "subtitles.elysium.block.cheirosiphon.deactivate"
+  },
+  "item.cheirosiphon.loop": {
+    "sounds": [
+      "elysium:item/cheirosiphon/loop"
+    ],
+    "subtitle": "subtitles.elysium.item.cheirosiphon.loop"
+  },
+  "item.cheirosiphon.blast": {
+    "sounds": [
+      "elysium:item/cheirosiphon/blast_1",
+      "elysium:item/cheirosiphon/blast_2",
+      "elysium:item/cheirosiphon/blast_3",
+      "elysium:item/cheirosiphon/blast_4"
+    ],
+    "subtitle": "subtitles.elysium.item.cheirosiphon.blast"
+  },
+  "item.cheirosiphon.ghastly_blast": {
+    "sounds": [
+      "elysium:item/cheirosiphon/ghastly_blast_1",
+      "elysium:item/cheirosiphon/ghastly_blast_2",
+      "elysium:item/cheirosiphon/ghastly_blast_3"
+    ],
+    "subtitle": "subtitles.elysium.item.cheirosiphon.ghastly_blast"
+  },
+  "entity.ghastly_fireball.parry": {
+    "sounds": [
+      "elysium:entity/ghastly_fireball/parry_1",
+      "elysium:entity/ghastly_fireball/parry_2"
+    ],
+    "subtitle": "subtitles.elysium.entity.ghastly_fireball.parry"
+  }
+}

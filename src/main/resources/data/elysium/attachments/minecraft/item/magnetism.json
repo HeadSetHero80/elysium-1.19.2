@@ -1,0 +1,12 @@
+{
+  "values": {
+    "minecraft:iron_helmet": 0.25,
+    "minecraft:iron_chestplate": 0.25,
+    "minecraft:iron_leggings": 0.25,
+    "minecraft:iron_boots": 0.25,
+    "minecraft:iron_ingot": 0.25,
+    "minecraft:anvil": 2.0,
+    "minecraft:chipped_anvil": 2.0,
+    "minecraft:damaged_anvil": 2.0
+  }
+}

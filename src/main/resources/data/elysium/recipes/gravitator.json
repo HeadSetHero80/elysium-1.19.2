@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "E": {
+      "item": "elysium:elysium_ingot"
+    },
+    "Q": {
+      "item": "minecraft:quartz"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "X": {
+      "item": "minecraft:comparator"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "QRE"
+  ],
+  "result": {
+    "item": "elysium:gravitator"
+  }
+}

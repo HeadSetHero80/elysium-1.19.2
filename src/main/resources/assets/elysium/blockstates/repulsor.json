@@ -1,0 +1,114 @@
+{
+  "variants": {
+    "elysium_power=0,facing=down": {
+      "model": "elysium:block/repulsor_vert_0",
+      "x": 180
+    },
+    "elysium_power=0,facing=east": {
+      "model": "elysium:block/repulsor_0",
+      "y": 90
+    },
+    "elysium_power=0,facing=north": {
+      "model": "elysium:block/repulsor_0"
+    },
+    "elysium_power=0,facing=south": {
+      "model": "elysium:block/repulsor_0",
+      "y": 180
+    },
+    "elysium_power=0,facing=up": {
+      "model": "elysium:block/repulsor_vert_0"
+    },
+    "elysium_power=0,facing=west": {
+      "model": "elysium:block/repulsor_0",
+      "y": 270
+    },
+    "elysium_power=1,facing=down": {
+      "model": "elysium:block/repulsor_vert_1",
+      "x": 180
+    },
+    "elysium_power=1,facing=east": {
+      "model": "elysium:block/repulsor_1",
+      "y": 90
+    },
+    "elysium_power=1,facing=north": {
+      "model": "elysium:block/repulsor_1"
+    },
+    "elysium_power=1,facing=south": {
+      "model": "elysium:block/repulsor_1",
+      "y": 180
+    },
+    "elysium_power=1,facing=up": {
+      "model": "elysium:block/repulsor_vert_1"
+    },
+    "elysium_power=1,facing=west": {
+      "model": "elysium:block/repulsor_1",
+      "y": 270
+    },
+    "elysium_power=2,facing=down": {
+      "model": "elysium:block/repulsor_vert_2",
+      "x": 180
+    },
+    "elysium_power=2,facing=east": {
+      "model": "elysium:block/repulsor_2",
+      "y": 90
+    },
+    "elysium_power=2,facing=north": {
+      "model": "elysium:block/repulsor_2"
+    },
+    "elysium_power=2,facing=south": {
+      "model": "elysium:block/repulsor_2",
+      "y": 180
+    },
+    "elysium_power=2,facing=up": {
+      "model": "elysium:block/repulsor_vert_2"
+    },
+    "elysium_power=2,facing=west": {
+      "model": "elysium:block/repulsor_2",
+      "y": 270
+    },
+    "elysium_power=3,facing=down": {
+      "model": "elysium:block/repulsor_vert_3",
+      "x": 180
+    },
+    "elysium_power=3,facing=east": {
+      "model": "elysium:block/repulsor_3",
+      "y": 90
+    },
+    "elysium_power=3,facing=north": {
+      "model": "elysium:block/repulsor_3"
+    },
+    "elysium_power=3,facing=south": {
+      "model": "elysium:block/repulsor_3",
+      "y": 180
+    },
+    "elysium_power=3,facing=up": {
+      "model": "elysium:block/repulsor_vert_3"
+    },
+    "elysium_power=3,facing=west": {
+      "model": "elysium:block/repulsor_3",
+      "y": 270
+    },
+    "elysium_power=4,facing=down": {
+      "model": "elysium:block/repulsor_vert_3",
+      "x": 180
+    },
+    "elysium_power=4,facing=east": {
+      "model": "elysium:block/repulsor_3",
+      "y": 90
+    },
+    "elysium_power=4,facing=north": {
+      "model": "elysium:block/repulsor_3"
+    },
+    "elysium_power=4,facing=south": {
+      "model": "elysium:block/repulsor_3",
+      "y": 180
+    },
+    "elysium_power=4,facing=up": {
+      "model": "elysium:block/repulsor_vert_3"
+    },
+    "elysium_power=4,facing=west": {
+      "model": "elysium:block/repulsor_3",
+      "y": 270
+    }
+  }
+}

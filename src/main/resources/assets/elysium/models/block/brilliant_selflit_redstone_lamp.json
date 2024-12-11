@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "elysium:block/brilliant_selflit_redstone_lamp"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "elysium:elysium_upgrade",
+  "addition": {
+    "item": "elysium:elysium_ingot"
+  },
+  "addition_amount": 4,
+  "base": {
+    "item": "minecraft:diamond_helmet"
+  },
+  "result": {
+    "item": "elysium:elysium_helmet"
+  }
+}

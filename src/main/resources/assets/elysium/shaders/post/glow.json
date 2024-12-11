@@ -1,0 +1,71 @@
+{
+  "targets": [
+    "swap",
+    "swap2",
+    "glows",
+    "minecraft:main"
+  ],
+  "passes": [
+    {
+      "name": "elysium:cull_depth",
+      "intarget": "glows",
+      "outtarget": "swap",
+      "auxtargets": [
+        {
+          "name": "MainDepthSampler",
+          "id": "minecraft:main:depth"
+        },
+        {
+          "name": "DiffuseDepthSampler",
+          "id": "glows:depth"
+        }
+      ]
+    },
+    {
+      "name": "blur",
+      "intarget": "swap",
+      "outtarget": "swap2",
+      "uniforms": [
+        {
+          "name": "BlurDir",
+          "values": [ 1.0, 0.0 ]
+        },
+        {
+          "name": "Radius",
+          "values": [ 20.0 ]
+        }
+      ]
+    },
+    {
+      "name": "blur",
+      "intarget": "swap2",
+      "outtarget": "swap",
+      "uniforms": [
+        {
+          "name": "BlurDir",
+          "values": [ 0.0, 1.0 ]
+        },
+        {
+          "name": "Radius",
+          "values": [ 20.0 ]
+        }
+      ]
+    },
+    {
+      "name": "elysium:glow",
+      "intarget": "swap",
+      "outtarget": "swap2",
+      "auxtargets": [
+        {
+          "name": "MainSampler",
+          "id": "minecraft:main"
+        }
+      ]
+    },
+    {
+      "name": "blit",
+      "intarget": "swap2",
+      "outtarget": "glows"
+    }
+  ]
+}

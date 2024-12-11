@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:adventure/ol_betsy",
+  "criteria": {
+    "cheirosiphon": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elysium:cheirosiphon"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.elysium.cheirosiphon.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "elysium:cheirosiphon"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.elysium.cheirosiphon.title"
+    }
+  },
+  "requirements": [
+    [
+      "cheirosiphon"
+    ]
+  ]
+}

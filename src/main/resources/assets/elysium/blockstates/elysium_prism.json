@@ -1,0 +1,119 @@
+{
+  "variants": {
+    "elysium_power=0,facing=down": {
+      "model": "elysium:block/elysium_prism",
+      "x": 90
+    },
+    "elysium_power=0,facing=east": {
+      "model": "elysium:block/elysium_prism",
+      "y": 90
+    },
+    "elysium_power=0,facing=north": {
+      "model": "elysium:block/elysium_prism"
+    },
+    "elysium_power=0,facing=south": {
+      "model": "elysium:block/elysium_prism",
+      "y": 180
+    },
+    "elysium_power=0,facing=up": {
+      "model": "elysium:block/elysium_prism",
+      "x": 270
+    },
+    "elysium_power=0,facing=west": {
+      "model": "elysium:block/elysium_prism",
+      "y": 270
+    },
+    "elysium_power=1,facing=down": {
+      "model": "elysium:block/elysium_prism",
+      "x": 90
+    },
+    "elysium_power=1,facing=east": {
+      "model": "elysium:block/elysium_prism",
+      "y": 90
+    },
+    "elysium_power=1,facing=north": {
+      "model": "elysium:block/elysium_prism"
+    },
+    "elysium_power=1,facing=south": {
+      "model": "elysium:block/elysium_prism",
+      "y": 180
+    },
+    "elysium_power=1,facing=up": {
+      "model": "elysium:block/elysium_prism",
+      "x": 270
+    },
+    "elysium_power=1,facing=west": {
+      "model": "elysium:block/elysium_prism",
+      "y": 270
+    },
+    "elysium_power=2,facing=down": {
+      "model": "elysium:block/elysium_prism",
+      "x": 90
+    },
+    "elysium_power=2,facing=east": {
+      "model": "elysium:block/elysium_prism",
+      "y": 90
+    },
+    "elysium_power=2,facing=north": {
+      "model": "elysium:block/elysium_prism"
+    },
+    "elysium_power=2,facing=south": {
+      "model": "elysium:block/elysium_prism",
+      "y": 180
+    },
+    "elysium_power=2,facing=up": {
+      "model": "elysium:block/elysium_prism",
+      "x": 270
+    },
+    "elysium_power=2,facing=west": {
+      "model": "elysium:block/elysium_prism",
+      "y": 270
+    },
+    "elysium_power=3,facing=down": {
+      "model": "elysium:block/elysium_prism",
+      "x": 90
+    },
+    "elysium_power=3,facing=east": {
+      "model": "elysium:block/elysium_prism",
+      "y": 90
+    },
+    "elysium_power=3,facing=north": {
+      "model": "elysium:block/elysium_prism"
+    },
+    "elysium_power=3,facing=south": {
+      "model": "elysium:block/elysium_prism",
+      "y": 180
+    },
+    "elysium_power=3,facing=up": {
+      "model": "elysium:block/elysium_prism",
+      "x": 270
+    },
+    "elysium_power=3,facing=west": {
+      "model": "elysium:block/elysium_prism",
+      "y": 270
+    },
+    "elysium_power=4,facing=down": {
+      "model": "elysium:block/elysium_prism",
+      "x": 90
+    },
+    "elysium_power=4,facing=east": {
+      "model": "elysium:block/elysium_prism",
+      "y": 90
+    },
+    "elysium_power=4,facing=north": {
+      "model": "elysium:block/elysium_prism"
+    },
+    "elysium_power=4,facing=south": {
+      "model": "elysium:block/elysium_prism",
+      "y": 180
+    },
+    "elysium_power=4,facing=up": {
+      "model": "elysium:block/elysium_prism",
+      "x": 270
+    },
+    "elysium_power=4,facing=west": {
+      "model": "elysium:block/elysium_prism",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "elysium:block/electrode_back",
+    "east": "elysium:block/gravitator_bottom",
+    "north": "elysium:block/gravitator_bottom",
+    "particle": "elysium:block/repulsor_front_2",
+    "south": "elysium:block/gravitator_bottom",
+    "up": "elysium:block/repulsor_front_2",
+    "west": "elysium:block/gravitator_bottom"
+  }
+}

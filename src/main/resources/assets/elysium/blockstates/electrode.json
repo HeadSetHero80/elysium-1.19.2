@@ -1,0 +1,1304 @@
+{
+  "variants": {
+    "charges=0,elysium_power=0,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_0_norod",
+      "x": 180
+    },
+    "charges=0,elysium_power=0,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_0_withrod",
+      "x": 180
+    },
+    "charges=0,elysium_power=0,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_0_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=0,elysium_power=0,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_0_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=0,elysium_power=0,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_0_norod",
+      "x": 90
+    },
+    "charges=0,elysium_power=0,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_0_withrod",
+      "x": 90
+    },
+    "charges=0,elysium_power=0,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_0_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=0,elysium_power=0,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_0_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=0,elysium_power=0,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_0_norod"
+    },
+    "charges=0,elysium_power=0,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_0_withrod"
+    },
+    "charges=0,elysium_power=0,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_0_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=0,elysium_power=0,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_0_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=0,elysium_power=1,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 180
+    },
+    "charges=0,elysium_power=1,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 180
+    },
+    "charges=0,elysium_power=1,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=0,elysium_power=1,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=0,elysium_power=1,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 90
+    },
+    "charges=0,elysium_power=1,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 90
+    },
+    "charges=0,elysium_power=1,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=0,elysium_power=1,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=0,elysium_power=1,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod"
+    },
+    "charges=0,elysium_power=1,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod"
+    },
+    "charges=0,elysium_power=1,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=0,elysium_power=1,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=0,elysium_power=2,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 180
+    },
+    "charges=0,elysium_power=2,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 180
+    },
+    "charges=0,elysium_power=2,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=0,elysium_power=2,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=0,elysium_power=2,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 90
+    },
+    "charges=0,elysium_power=2,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 90
+    },
+    "charges=0,elysium_power=2,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=0,elysium_power=2,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=0,elysium_power=2,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod"
+    },
+    "charges=0,elysium_power=2,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod"
+    },
+    "charges=0,elysium_power=2,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=0,elysium_power=2,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=0,elysium_power=3,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 180
+    },
+    "charges=0,elysium_power=3,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 180
+    },
+    "charges=0,elysium_power=3,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=0,elysium_power=3,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=0,elysium_power=3,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 90
+    },
+    "charges=0,elysium_power=3,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 90
+    },
+    "charges=0,elysium_power=3,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=0,elysium_power=3,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=0,elysium_power=3,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod"
+    },
+    "charges=0,elysium_power=3,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod"
+    },
+    "charges=0,elysium_power=3,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=0,elysium_power=3,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=0,elysium_power=4,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 180
+    },
+    "charges=0,elysium_power=4,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 180
+    },
+    "charges=0,elysium_power=4,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=0,elysium_power=4,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=0,elysium_power=4,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 90
+    },
+    "charges=0,elysium_power=4,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 90
+    },
+    "charges=0,elysium_power=4,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=0,elysium_power=4,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=0,elysium_power=4,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod"
+    },
+    "charges=0,elysium_power=4,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod"
+    },
+    "charges=0,elysium_power=4,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_0_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=0,elysium_power=4,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_0_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=1,elysium_power=0,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_1_norod",
+      "x": 180
+    },
+    "charges=1,elysium_power=0,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_1_withrod",
+      "x": 180
+    },
+    "charges=1,elysium_power=0,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_1_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=1,elysium_power=0,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_1_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=1,elysium_power=0,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_1_norod",
+      "x": 90
+    },
+    "charges=1,elysium_power=0,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_1_withrod",
+      "x": 90
+    },
+    "charges=1,elysium_power=0,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_1_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=1,elysium_power=0,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_1_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=1,elysium_power=0,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_1_norod"
+    },
+    "charges=1,elysium_power=0,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_1_withrod"
+    },
+    "charges=1,elysium_power=0,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_1_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=1,elysium_power=0,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_1_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=1,elysium_power=1,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 180
+    },
+    "charges=1,elysium_power=1,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 180
+    },
+    "charges=1,elysium_power=1,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=1,elysium_power=1,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=1,elysium_power=1,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 90
+    },
+    "charges=1,elysium_power=1,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 90
+    },
+    "charges=1,elysium_power=1,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=1,elysium_power=1,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=1,elysium_power=1,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod"
+    },
+    "charges=1,elysium_power=1,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod"
+    },
+    "charges=1,elysium_power=1,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=1,elysium_power=1,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=1,elysium_power=2,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 180
+    },
+    "charges=1,elysium_power=2,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 180
+    },
+    "charges=1,elysium_power=2,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=1,elysium_power=2,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=1,elysium_power=2,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 90
+    },
+    "charges=1,elysium_power=2,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 90
+    },
+    "charges=1,elysium_power=2,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=1,elysium_power=2,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=1,elysium_power=2,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod"
+    },
+    "charges=1,elysium_power=2,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod"
+    },
+    "charges=1,elysium_power=2,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=1,elysium_power=2,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=1,elysium_power=3,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 180
+    },
+    "charges=1,elysium_power=3,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 180
+    },
+    "charges=1,elysium_power=3,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=1,elysium_power=3,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=1,elysium_power=3,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 90
+    },
+    "charges=1,elysium_power=3,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 90
+    },
+    "charges=1,elysium_power=3,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=1,elysium_power=3,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=1,elysium_power=3,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod"
+    },
+    "charges=1,elysium_power=3,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod"
+    },
+    "charges=1,elysium_power=3,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=1,elysium_power=3,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=1,elysium_power=4,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 180
+    },
+    "charges=1,elysium_power=4,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 180
+    },
+    "charges=1,elysium_power=4,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=1,elysium_power=4,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=1,elysium_power=4,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 90
+    },
+    "charges=1,elysium_power=4,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 90
+    },
+    "charges=1,elysium_power=4,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=1,elysium_power=4,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=1,elysium_power=4,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod"
+    },
+    "charges=1,elysium_power=4,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod"
+    },
+    "charges=1,elysium_power=4,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_1_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=1,elysium_power=4,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_1_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=2,elysium_power=0,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_2_norod",
+      "x": 180
+    },
+    "charges=2,elysium_power=0,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_2_withrod",
+      "x": 180
+    },
+    "charges=2,elysium_power=0,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_2_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=2,elysium_power=0,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_2_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=2,elysium_power=0,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_2_norod",
+      "x": 90
+    },
+    "charges=2,elysium_power=0,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_2_withrod",
+      "x": 90
+    },
+    "charges=2,elysium_power=0,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_2_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=2,elysium_power=0,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_2_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=2,elysium_power=0,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_2_norod"
+    },
+    "charges=2,elysium_power=0,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_2_withrod"
+    },
+    "charges=2,elysium_power=0,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_2_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=2,elysium_power=0,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_2_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=2,elysium_power=1,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 180
+    },
+    "charges=2,elysium_power=1,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 180
+    },
+    "charges=2,elysium_power=1,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=2,elysium_power=1,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=2,elysium_power=1,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 90
+    },
+    "charges=2,elysium_power=1,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 90
+    },
+    "charges=2,elysium_power=1,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=2,elysium_power=1,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=2,elysium_power=1,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod"
+    },
+    "charges=2,elysium_power=1,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod"
+    },
+    "charges=2,elysium_power=1,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=2,elysium_power=1,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=2,elysium_power=2,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 180
+    },
+    "charges=2,elysium_power=2,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 180
+    },
+    "charges=2,elysium_power=2,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=2,elysium_power=2,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=2,elysium_power=2,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 90
+    },
+    "charges=2,elysium_power=2,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 90
+    },
+    "charges=2,elysium_power=2,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=2,elysium_power=2,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=2,elysium_power=2,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod"
+    },
+    "charges=2,elysium_power=2,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod"
+    },
+    "charges=2,elysium_power=2,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=2,elysium_power=2,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=2,elysium_power=3,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 180
+    },
+    "charges=2,elysium_power=3,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 180
+    },
+    "charges=2,elysium_power=3,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=2,elysium_power=3,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=2,elysium_power=3,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 90
+    },
+    "charges=2,elysium_power=3,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 90
+    },
+    "charges=2,elysium_power=3,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=2,elysium_power=3,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=2,elysium_power=3,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod"
+    },
+    "charges=2,elysium_power=3,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod"
+    },
+    "charges=2,elysium_power=3,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=2,elysium_power=3,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=2,elysium_power=4,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 180
+    },
+    "charges=2,elysium_power=4,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 180
+    },
+    "charges=2,elysium_power=4,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=2,elysium_power=4,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=2,elysium_power=4,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 90
+    },
+    "charges=2,elysium_power=4,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 90
+    },
+    "charges=2,elysium_power=4,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=2,elysium_power=4,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=2,elysium_power=4,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod"
+    },
+    "charges=2,elysium_power=4,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod"
+    },
+    "charges=2,elysium_power=4,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_2_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=2,elysium_power=4,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_2_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=3,elysium_power=0,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_3_norod",
+      "x": 180
+    },
+    "charges=3,elysium_power=0,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_3_withrod",
+      "x": 180
+    },
+    "charges=3,elysium_power=0,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_3_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=3,elysium_power=0,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_3_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=3,elysium_power=0,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_3_norod",
+      "x": 90
+    },
+    "charges=3,elysium_power=0,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_3_withrod",
+      "x": 90
+    },
+    "charges=3,elysium_power=0,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_3_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=3,elysium_power=0,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_3_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=3,elysium_power=0,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_3_norod"
+    },
+    "charges=3,elysium_power=0,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_3_withrod"
+    },
+    "charges=3,elysium_power=0,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_3_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=3,elysium_power=0,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_3_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=3,elysium_power=1,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 180
+    },
+    "charges=3,elysium_power=1,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 180
+    },
+    "charges=3,elysium_power=1,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=3,elysium_power=1,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=3,elysium_power=1,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 90
+    },
+    "charges=3,elysium_power=1,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 90
+    },
+    "charges=3,elysium_power=1,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=3,elysium_power=1,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=3,elysium_power=1,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod"
+    },
+    "charges=3,elysium_power=1,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod"
+    },
+    "charges=3,elysium_power=1,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=3,elysium_power=1,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=3,elysium_power=2,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 180
+    },
+    "charges=3,elysium_power=2,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 180
+    },
+    "charges=3,elysium_power=2,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=3,elysium_power=2,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=3,elysium_power=2,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 90
+    },
+    "charges=3,elysium_power=2,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 90
+    },
+    "charges=3,elysium_power=2,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=3,elysium_power=2,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=3,elysium_power=2,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod"
+    },
+    "charges=3,elysium_power=2,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod"
+    },
+    "charges=3,elysium_power=2,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=3,elysium_power=2,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=3,elysium_power=3,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 180
+    },
+    "charges=3,elysium_power=3,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 180
+    },
+    "charges=3,elysium_power=3,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=3,elysium_power=3,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=3,elysium_power=3,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 90
+    },
+    "charges=3,elysium_power=3,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 90
+    },
+    "charges=3,elysium_power=3,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=3,elysium_power=3,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=3,elysium_power=3,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod"
+    },
+    "charges=3,elysium_power=3,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod"
+    },
+    "charges=3,elysium_power=3,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=3,elysium_power=3,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=3,elysium_power=4,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 180
+    },
+    "charges=3,elysium_power=4,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 180
+    },
+    "charges=3,elysium_power=4,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=3,elysium_power=4,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=3,elysium_power=4,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 90
+    },
+    "charges=3,elysium_power=4,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 90
+    },
+    "charges=3,elysium_power=4,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=3,elysium_power=4,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=3,elysium_power=4,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod"
+    },
+    "charges=3,elysium_power=4,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod"
+    },
+    "charges=3,elysium_power=4,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_3_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=3,elysium_power=4,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_3_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=4,elysium_power=0,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_4_norod",
+      "x": 180
+    },
+    "charges=4,elysium_power=0,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_4_withrod",
+      "x": 180
+    },
+    "charges=4,elysium_power=0,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_4_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=4,elysium_power=0,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_4_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=4,elysium_power=0,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_4_norod",
+      "x": 90
+    },
+    "charges=4,elysium_power=0,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_4_withrod",
+      "x": 90
+    },
+    "charges=4,elysium_power=0,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_4_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=4,elysium_power=0,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_4_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=4,elysium_power=0,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_4_norod"
+    },
+    "charges=4,elysium_power=0,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_4_withrod"
+    },
+    "charges=4,elysium_power=0,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_unpowered_4_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=4,elysium_power=0,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_unpowered_4_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=4,elysium_power=1,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 180
+    },
+    "charges=4,elysium_power=1,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 180
+    },
+    "charges=4,elysium_power=1,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=4,elysium_power=1,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=4,elysium_power=1,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 90
+    },
+    "charges=4,elysium_power=1,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 90
+    },
+    "charges=4,elysium_power=1,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=4,elysium_power=1,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=4,elysium_power=1,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod"
+    },
+    "charges=4,elysium_power=1,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod"
+    },
+    "charges=4,elysium_power=1,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=4,elysium_power=1,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=4,elysium_power=2,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 180
+    },
+    "charges=4,elysium_power=2,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 180
+    },
+    "charges=4,elysium_power=2,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=4,elysium_power=2,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=4,elysium_power=2,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 90
+    },
+    "charges=4,elysium_power=2,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 90
+    },
+    "charges=4,elysium_power=2,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=4,elysium_power=2,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=4,elysium_power=2,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod"
+    },
+    "charges=4,elysium_power=2,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod"
+    },
+    "charges=4,elysium_power=2,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=4,elysium_power=2,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=4,elysium_power=3,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 180
+    },
+    "charges=4,elysium_power=3,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 180
+    },
+    "charges=4,elysium_power=3,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=4,elysium_power=3,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=4,elysium_power=3,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 90
+    },
+    "charges=4,elysium_power=3,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 90
+    },
+    "charges=4,elysium_power=3,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=4,elysium_power=3,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=4,elysium_power=3,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod"
+    },
+    "charges=4,elysium_power=3,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod"
+    },
+    "charges=4,elysium_power=3,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=4,elysium_power=3,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=4,elysium_power=4,facing=down,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 180
+    },
+    "charges=4,elysium_power=4,facing=down,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 180
+    },
+    "charges=4,elysium_power=4,facing=east,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=4,elysium_power=4,facing=east,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 90,
+      "y": 90
+    },
+    "charges=4,elysium_power=4,facing=north,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 90
+    },
+    "charges=4,elysium_power=4,facing=north,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 90
+    },
+    "charges=4,elysium_power=4,facing=south,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=4,elysium_power=4,facing=south,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 90,
+      "y": 180
+    },
+    "charges=4,elysium_power=4,facing=up,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod"
+    },
+    "charges=4,elysium_power=4,facing=up,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod"
+    },
+    "charges=4,elysium_power=4,facing=west,has_rod=false": {
+      "model": "elysium:block/electrode_powered_4_norod",
+      "x": 90,
+      "y": 270
+    },
+    "charges=4,elysium_power=4,facing=west,has_rod=true": {
+      "model": "elysium:block/electrode_powered_4_withrod",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

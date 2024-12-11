@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_directional",
+  "textures": {
+    "down": "elysium:block/gravitator_bottom",
+    "east": "elysium:block/gravitator_east_side",
+    "north": "elysium:block/gravitator_front_2",
+    "particle": "elysium:block/gravitator_front_2",
+    "south": "elysium:block/gravitator_back",
+    "up": "elysium:block/gravitator_top",
+    "west": "elysium:block/gravitator_west_side"
+  }
+}

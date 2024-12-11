@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:orange_dye"
+    },
+    {
+      "item": "minecraft:iron_chestplate"
+    }
+  ],
+  "result": {
+    "item": "elysium:experimental_elysium_chestplate"
+  }
+}

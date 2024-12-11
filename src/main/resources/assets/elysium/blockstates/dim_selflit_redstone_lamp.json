@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "elysium:block/dim_selflit_redstone_lamp"
+    }
+  }
+}

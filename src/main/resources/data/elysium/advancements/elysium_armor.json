@@ -1,0 +1,56 @@
+{
+  "parent": "minecraft:nether/obtain_ancient_debris",
+  "criteria": {
+    "elysium_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elysium:elysium_helmet"
+            ]
+          },
+          {
+            "items": [
+              "elysium:elysium_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "elysium:elysium_leggings"
+            ]
+          },
+          {
+            "items": [
+              "elysium:elysium_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.elysium.elysium_armor.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "elysium:elysium_chestplate",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.elysium.elysium_armor.title"
+    }
+  },
+  "requirements": [
+    [
+      "elysium_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  }
+}

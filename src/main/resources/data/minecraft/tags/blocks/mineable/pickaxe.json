@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "elysium:elysium_block",
+    "elysium:brilliant_selflit_redstone_lamp",
+    "elysium:selflit_redstone_lamp",
+    "elysium:dim_selflit_redstone_lamp",
+    "elysium:elysium_prism",
+    "elysium:repulsor",
+    "elysium:gravitator",
+    "elysium:electrode"
+  ]
+}

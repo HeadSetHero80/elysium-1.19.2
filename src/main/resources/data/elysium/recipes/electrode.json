@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "E": {
+      "item": "elysium:elysium_ingot"
+    },
+    "Q": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "CQC",
+    "EEE"
+  ],
+  "result": {
+    "item": "elysium:electrode"
+  }
+}

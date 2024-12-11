@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "elysium:elysium_helmet",
+    "elysium:elysium_chestplate",
+    "elysium:elysium_leggings",
+    "elysium:elysium_boots"
+  ]
+}

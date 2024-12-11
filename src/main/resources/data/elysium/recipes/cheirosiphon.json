@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "minecraft:bucket"
+    },
+    "E": {
+      "item": "elysium:elysium_ingot"
+    },
+    "H": {
+      "item": "minecraft:hopper"
+    },
+    "L": {
+      "item": "minecraft:lever"
+    },
+    "R": {
+      "item": "elysium:repulsor"
+    }
+  },
+  "pattern": [
+    "B E",
+    " R ",
+    "H L"
+  ],
+  "result": {
+    "item": "elysium:cheirosiphon"
+  }
+}

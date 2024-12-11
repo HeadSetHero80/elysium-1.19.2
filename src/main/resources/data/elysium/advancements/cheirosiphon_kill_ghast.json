@@ -1,0 +1,48 @@
+{
+  "parent": "elysium:cheirosiphon",
+  "criteria": {
+    "killed_ghast": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:ghast"
+            }
+          }
+        ],
+        "killing_blow": {
+          "direct_entity": {
+            "type": "elysium:ghastly_fireball"
+          },
+          "is_projectile": true
+        }
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.elysium.cheirosiphon_kill_ghast.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "elysium:cheirosiphon"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.elysium.cheirosiphon_kill_ghast.title"
+    }
+  },
+  "requirements": [
+    [
+      "killed_ghast"
+    ]
+  ],
+  "rewards": {
+    "experience": 50
+  }
+}

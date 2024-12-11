@@ -1,0 +1,12 @@
+{
+  "values": {
+    "minecraft:iron_helmet": 0.25,
+    "minecraft:iron_chestplate": 0.25,
+    "minecraft:iron_leggings": 0.25,
+    "minecraft:iron_boots": 0.5,
+    "minecraft:leather_helmet": -0.75,
+    "minecraft:leather_chestplate": -0.75,
+    "minecraft:leather_leggings": -0.75,
+    "minecraft:leather_boots": -1.0
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elysium:elysium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "elysium:elysium_ingot"
+  }
+}

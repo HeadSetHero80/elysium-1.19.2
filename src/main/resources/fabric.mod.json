@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "elysium",
+	"version": "${version}",
+	"name": "Elysium",
+	"description": "Ported by Nooby Booby",
+	"authors": [
+		"Will BL - Author",
+		"Nooby Booby - Porter"
+	],
+	"contact": {
+		"homepage": "https://www.reddit.com/r/Freeminecraftmaps_/",
+		"issues": "https://discord.gg/zs2B8VS4NF",
+		"sources": "https://discord.gg/ZAxuCEVbZE"
+	},
+	"license": "Only Femboys Rights To Reserve",
+	"icon": "assets/elysium/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.williambl.elysium.Elysium"
+		],
+		"cardinal-components-entity": [
+			"com.williambl.elysium.Elysium"
+		],
+		"client": [
+			"com.williambl.elysium.ElysiumClient"
+		]
+	},
+	"mixins": [
+		"elysium.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.19.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

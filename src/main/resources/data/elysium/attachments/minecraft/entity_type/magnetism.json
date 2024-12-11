@@ -1,0 +1,8 @@
+{
+  "values": {
+    "minecraft:iron_golem": 5.0,
+    "minecraft:tnt": 3.0,
+    "minecraft:trident": -100.0,
+    "arcanuscontinuum:magic_projectile": 3.0
+  }
+}

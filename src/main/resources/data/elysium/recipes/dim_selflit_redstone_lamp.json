@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elysium:selflit_redstone_lamp"
+    },
+    {
+      "item": "minecraft:tinted_glass"
+    }
+  ],
+  "result": {
+    "item": "elysium:dim_selflit_redstone_lamp"
+  }
+}

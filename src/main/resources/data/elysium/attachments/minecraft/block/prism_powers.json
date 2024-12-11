@@ -1,0 +1,8 @@
+{
+  "values": {
+    "minecraft:redstone_lamp": 2,
+    "elysium:selflit_redstone_lamp": 2,
+    "elysium:dim_selflit_redstone_lamp": 1,
+    "elysium:brilliant_selflit_redstone_lamp": 3
+  }
+}

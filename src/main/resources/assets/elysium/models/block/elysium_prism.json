@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_directional",
+  "textures": {
+    "down": "elysium:block/elysium_prism_side",
+    "east": "elysium:block/elysium_prism_side",
+    "north": "elysium:block/elysium_prism_top",
+    "particle": "elysium:block/elysium_prism_top",
+    "south": "elysium:block/elysium_prism_side",
+    "up": "elysium:block/elysium_prism_side",
+    "west": "elysium:block/elysium_prism_side"
+  }
+}

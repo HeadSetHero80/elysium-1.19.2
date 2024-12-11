@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "E": {
+      "item": "elysium:elysium_ingot"
+    },
+    "G": {
+      "item": "minecraft:tinted_glass"
+    }
+  },
+  "pattern": [
+    "EGE",
+    "GAG",
+    "EGE"
+  ],
+  "result": {
+    "item": "elysium:elysium_prism"
+  }
+}

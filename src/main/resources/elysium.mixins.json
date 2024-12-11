@@ -1,0 +1,24 @@
+{
+	"required": true,
+	"package": "com.williambl.elysium.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"BaseFireBlockMixin",
+		"BeaconBlockEntityMixin",
+		"CombatTrackerMixin",
+		"EnchantmentHelperMixin",
+		"InventoryMixin",
+		"LivingEntityMixin",
+		"PistonMovingBlockEntityMixin"
+	],
+	"client": [
+		"client.EntityRenderDispatcherMixin",
+		"client.HumanoidModelMixin",
+		"client.LocalPlayerMixin",
+		"client.MinecraftMixin",
+		"client.PistonHeadRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
