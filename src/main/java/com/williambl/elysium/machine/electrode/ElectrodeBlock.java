@@ -1,112 +1,158 @@
 package com.williambl.elysium.machine.electrode;
 
+import com.williambl.elysium.machine.BeamPowered;
 import com.williambl.elysium.machine.ElysiumMachineBlock;
 import com.williambl.elysium.registry.ElysiumBlocks;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityTicker;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.inventory.Inventory;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.particle.ParticleTypes;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.state.StateManager;
-import net.minecraft.state.property.BooleanProperty;
-import net.minecraft.state.property.IntProperty;
-import net.minecraft.state.property.Properties;
-import net.minecraft.state.property.Property;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
-import net.minecraft.util.ItemScatterer;
-import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.inventory.SidedInventory;
+import net.minecraft.item.ItemStack;
+import net.minecraft.screen.GenericContainerScreenHandler;
+import net.minecraft.screen.NamedScreenHandlerFactory;
+import net.minecraft.screen.ScreenHandler;
+import net.minecraft.screen.ScreenHandlerType;
+import net.minecraft.text.Text;
+import net.minecraft.util.Clearable;
+import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.Vec3i;
-import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class ElectrodeBlock extends ElysiumMachineBlock {
-    public static final IntProperty CHARGES = IntProperty.of("charges", 0, 4);
-    public static final BooleanProperty HAS_ROD = BooleanProperty.of("has_rod");
+import java.util.Objects;
+import java.util.UUID;
 
-    public ElectrodeBlock(AbstractBlock.Settings properties) {
-        super(properties);
-        this.setDefaultState((BlockState)((BlockState)this.getDefaultState().with(CHARGES, 0)).with(HAS_ROD, false));
-    }
-
-    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        super.appendProperties(builder);
-        builder.add(new Property[]{CHARGES}).add(new Property[]{HAS_ROD});
-    }
-
+public class ElectrodeBlockEntity extends BlockEntity implements Clearable, SidedInventory, NamedScreenHandlerFactory, BeamPowered {
+    private static final int NUM_SLOTS = 9;
     @Nullable
-    public BlockEntity createBlockEntity(@NotNull BlockPos blockPos, @NotNull BlockState blockState) {
-        return ElysiumBlocks.ELECTRODE_BE.instantiate(blockPos, blockState);
+    private BlockPos beamSourcePos;
+    private final DefaultedList<ItemStack> stacks = DefaultedList.ofSize(NUM_SLOTS, ItemStack.EMPTY);
+    @Nullable
+    private UUID ownerUUID;
+
+    public ElectrodeBlockEntity(BlockPos blockPos, BlockState blockState) {
+        super(ElysiumBlocks.ELECTRODE_BE, blockPos, blockState);
     }
 
-    public void onStateReplaced(BlockState state, @NotNull World level, @NotNull BlockPos pos, BlockState newState, boolean isMoving) {
-        if (!state.isOf(newState.getBlock())) {
-            BlockEntity blockEntity = level.getBlockEntity(pos);
-            if (blockEntity instanceof Inventory) {
-                ItemScatterer.spawn(level, pos, (Inventory)blockEntity);
-                level.updateComparators(pos, this);
-            }
+    public void setOwner(UUID uuid) {
+        this.ownerUUID = uuid;
+    }
 
-            super.onStateReplaced(state, level, pos, newState, isMoving);
-        }
+    @Override
+    public int size() {
+        return NUM_SLOTS;
+    }
 
+    @Override
+    public ItemStack getStack(int slot) {
+        return slot >= 0 && slot < stacks.size() ? stacks.get(slot) : ItemStack.EMPTY;
+    }
+
+    @Override
+    public void clear() {
+        this.stacks.clear();
     }
 
     @NotNull
-    public BlockState getStateForNeighborUpdate(@NotNull BlockState state, @NotNull Direction direction, @NotNull BlockState neighborState, @NotNull WorldAccess level, @NotNull BlockPos currentPos, @NotNull BlockPos neighborPos) {
-        BlockState res = super.getStateForNeighborUpdate(state, direction, neighborState, level, currentPos, neighborPos);
-        return direction == state.get(Properties.FACING) ? (BlockState)res.with(HAS_ROD, neighborState.isIn(ElysiumBlocks.LIGHTNING_RODS)) : res;
-    }
-
-    public void randomDisplayTick(BlockState state, @NotNull World level, @NotNull BlockPos pos, Random random) {
-        if (random.nextBetweenExclusive(0, 3) < state.get(ElysiumBlocks.ELYSIUM_POWER)) {
-            Vec3i dir = ((Direction)state.get(Properties.FACING)).getVector();
-            level.addParticle(ParticleTypes.ELECTRIC_SPARK, (double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D, (double)dir.getX() * 0.2D, (double)dir.getY() * 0.2D, (double)dir.getZ() * 0.2D);
-        }
-
-    }
-
-    @NotNull
-    public ActionResult onUse(@NotNull BlockState state, @NotNull World level, @NotNull BlockPos pos, @NotNull PlayerEntity player, @NotNull Hand hand, @NotNull BlockHitResult hitResult) {
-        if (hitResult.getSide() == state.get(Properties.FACING)) {
-            Item eBe = player.getStackInHand(hand).getItem();
-            if (eBe instanceof BlockItem) {
-                BlockItem blockItem = (BlockItem)eBe;
-                if (blockItem.getBlock().getDefaultState().isIn(ElysiumBlocks.LIGHTNING_RODS)) {
-                    return ActionResult.PASS;
-                }
-            }
-        }
-
-        if (level.isClient) {
-            return ActionResult.SUCCESS;
-        } else {
-            BlockEntity be = level.getBlockEntity(pos);
-            if (be instanceof ElectrodeBlockEntity) {
-                ElectrodeBlockEntity eBe = (ElectrodeBlockEntity)be;
-                if (eBe.canBeUsedBy(player)) {
-                    player.openHandledScreen(eBe);
-                }
-            }
-
-            return ActionResult.CONSUME;
-        }
+    @Override
+    public Text getDisplayName() {
+        return Text.translatable("container.elysium.electrode");
     }
 
     @Nullable
-    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(@NotNull World level, @NotNull BlockState blockState, @NotNull BlockEntityType<T> blockEntityType) {
-        return level instanceof ServerWorld ? checkType(blockEntityType, ElysiumBlocks.ELECTRODE_BE, ElectrodeBlockEntity::tick) : null;
+    @Override
+    public ScreenHandler createMenu(int i, @NotNull PlayerInventory inventory, @NotNull PlayerEntity player) {
+        return new GenericContainerScreenHandler(ScreenHandlerType.GENERIC_9X1, i, inventory, this, 1);
+    }
+
+    @Nullable
+    public BlockPos getBeamSourcePos() {
+        return this.beamSourcePos;
+    }
+
+    public void setBeamSourcePos(@Nullable BlockPos pos) {
+        this.beamSourcePos = pos;
+    }
+
+    public boolean canAcceptBeam(Direction beamDir) {
+        return ((ElysiumMachineBlock) ElysiumBlocks.ELECTRODE).isReceivingSide(this.getCachedState(), beamDir.getOpposite());
+    }
+
+    @NotNull
+    @Override
+    public int[] getAvailableSlots(@NotNull Direction side) {
+        int[] slots = new int[NUM_SLOTS];
+        for (int i = 0; i < NUM_SLOTS; slots[i] = i++) {
+        }
+        return slots;
+    }
+
+    @Override
+    public boolean canInsert(int index, @NotNull ItemStack itemStack, @Nullable Direction direction) {
+        return index < NUM_SLOTS;
+    }
+
+    @Override
+    public boolean canExtract(int index, @NotNull ItemStack stack, @NotNull Direction direction) {
+        return index < NUM_SLOTS;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return this.stacks.stream().allMatch(ItemStack::isEmpty);
+    }
+
+    @Override
+    public void setStack(int slot, @NotNull ItemStack stack) {
+        if (slot < NUM_SLOTS) {
+            this.stacks.set(slot, stack);
+        }
+    }
+
+    @Override
+    public ItemStack removeStack(int slot, int amount) {
+        ItemStack removing = this.getStack(slot);
+        return removing.isEmpty() ? ItemStack.EMPTY : removing.split(amount);
+    }
+
+    @Override
+    public ItemStack removeStack(int slot) {
+        ItemStack removing = this.getStack(slot);
+        this.setStack(slot, ItemStack.EMPTY);
+        return removing;
+    }
+
+    public boolean canBeUsedBy(PlayerEntity player) {
+        return Objects.equals(player.getUuid(), this.ownerUUID) || player.isCreativeLevelTwoOp();
+    }
+
+    @Override
+    public boolean canPlayerUse(@NotNull PlayerEntity player) {
+        if (this.world != null && this.world.getBlockEntity(this.pos) == this) {
+            if (!this.canBeUsedBy(player)) {
+                return false;
+            }
+            return !(player.squaredDistanceTo(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D) > 64.0D);
+        }
+        return false;
+    }
+
+    public static void tick(World level, BlockPos pos, BlockState state, ElectrodeBlockEntity be) {
+        int power = state.get(ElysiumBlocks.ELYSIUM_POWER);
+        if (be.getBeamSourcePos() != null) {
+            int actualPower = be.getBeamPower(level);
+            if (actualPower == 0) {
+                be.setBeamSourcePos(null);
+            }
+
+            if (actualPower != power) {
+                Direction neighbourDir = state.get(Properties.FACING).getOpposite();
+                BlockPos neighbourPos = pos.offset(neighbourDir);
+                level.setBlockState(pos, state.getStateForNeighborUpdate(neighbourDir, level.getBlockState(neighbourPos), level, pos, neighbourPos));
+            }
+        }
     }
 }
