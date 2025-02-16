@@ -40,7 +40,6 @@ public final class GlowEffectManager implements EntitiesPreRenderCallback, PostW
             this.auraFramebuffer.draw();
             RenderSystem.disableBlend();
         }
-
     }
 
     public void beginGlowFramebufferUse() {
@@ -48,15 +47,15 @@ public final class GlowEffectManager implements EntitiesPreRenderCallback, PostW
         if (auraFramebuffer != null) {
             auraFramebuffer.beginWrite(false);
             if (!this.auraBufferCleared) {
-                float[] clearColor = auraFramebuffer;
+                // Define the clear color (RGBA values)
+                float[] clearColor = new float[]{0.0f, 0.0f, 0.0f, 0.0f}; // Transparent black
                 RenderSystem.clearColor(clearColor[0], clearColor[1], clearColor[2], clearColor[3]);
-                RenderSystem.clear(16384, MinecraftClient.IS_SYSTEM_MAC);
+                RenderSystem.clear(16384, MinecraftClient.IS_SYSTEM_MAC); // Clear the color buffer
                 this.auraFramebuffer.copyDepthFrom(this.client.getFramebuffer());
                 auraFramebuffer.beginWrite(false);
                 this.auraBufferCleared = true;
             }
         }
-
     }
 
     private void endGlowFramebufferUse() {
