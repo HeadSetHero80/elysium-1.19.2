@@ -25,6 +25,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.particle.ParticleType;
 import net.minecraft.tag.TagKey;
@@ -40,7 +41,10 @@ public class Elysium implements ModInitializer, EntityComponentInitializer {
 	public static final EntityType<CheirosiphonFlame> CHEIROSIPHON_FLAME = Registry.register(
 			Registry.ENTITY_TYPE,
 			id("cheirosiphon_flame"),
-			FabricEntityTypeBuilder.<CheirosiphonFlame>create(SpawnGroup.MISC, CheirosiphonFlame::new)
+			FabricEntityTypeBuilder.<CheirosiphonFlame>create(SpawnGroup.MISC, (entityEntityType, world) -> {
+						PlayerEntity user = null;
+						return new CheirosiphonFlame(entityEntityType, user, world);
+					})
 					.dimensions(EntityDimensions.changing(0.25F, 1.0F))
 					.trackRangeChunks(8)
 					.trackedUpdateRate(20)

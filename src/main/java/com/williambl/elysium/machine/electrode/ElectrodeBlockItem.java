@@ -21,8 +21,8 @@ public class ElectrodeBlockItem extends BlockItem {
         boolean result = super.postPlacement(pos, level, player, stack, state);
         if (!level.isClient() && player != null) {
             BlockEntity var8 = level.getBlockEntity(pos);
-            if (var8 instanceof ElectrodeBlockEntity) {
-                ElectrodeBlockEntity be = (ElectrodeBlockEntity)var8;
+            if (var8 instanceof ElectrodeBlock) {
+                ElectrodeBlock be = (ElectrodeBlock)var8;
                 be.setOwner(player.getUuid());
                 return true;
             }

@@ -3,6 +3,7 @@ package com.williambl.elysium.machine.electrode;
 import com.williambl.elysium.machine.BeamPowered;
 import com.williambl.elysium.machine.ElysiumMachineBlock;
 import com.williambl.elysium.registry.ElysiumBlocks;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -13,6 +14,7 @@ import net.minecraft.screen.GenericContainerScreenHandler;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerType;
+import net.minecraft.state.property.Properties;
 import net.minecraft.text.Text;
 import net.minecraft.util.Clearable;
 import net.minecraft.util.collection.DefaultedList;
@@ -25,7 +27,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Objects;
 import java.util.UUID;
 
-public class ElectrodeBlockEntity extends BlockEntity implements Clearable, SidedInventory, NamedScreenHandlerFactory, BeamPowered {
+public class ElectrodeBlock extends BlockEntity implements Clearable, SidedInventory, NamedScreenHandlerFactory, BeamPowered {
     private static final int NUM_SLOTS = 9;
     @Nullable
     private BlockPos beamSourcePos;
@@ -33,7 +35,7 @@ public class ElectrodeBlockEntity extends BlockEntity implements Clearable, Side
     @Nullable
     private UUID ownerUUID;
 
-    public ElectrodeBlockEntity(BlockPos blockPos, BlockState blockState) {
+    public ElectrodeBlock(BlockPos blockPos, BlockState blockState) {
         super(ElysiumBlocks.ELECTRODE_BE, blockPos, blockState);
     }
 
@@ -140,7 +142,7 @@ public class ElectrodeBlockEntity extends BlockEntity implements Clearable, Side
         return false;
     }
 
-    public static void tick(World level, BlockPos pos, BlockState state, ElectrodeBlockEntity be) {
+    public static void tick(World level, BlockPos pos, BlockState state, ElectrodeBlock be) {
         int power = state.get(ElysiumBlocks.ELYSIUM_POWER);
         if (be.getBeamSourcePos() != null) {
             int actualPower = be.getBeamPower(level);

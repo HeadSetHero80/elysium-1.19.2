@@ -1,10 +1,8 @@
 package com.williambl.elysium.registry;
 
-import com.mojang.serialization.Codec;
 import com.williambl.elysium.Elysium;
 import com.williambl.elysium.fire.ElysiumFireBlock;
 import com.williambl.elysium.machine.electrode.ElectrodeBlock;
-import com.williambl.elysium.machine.electrode.ElectrodeBlockEntity;
 import com.williambl.elysium.machine.electrode.ElectrodeBlockItem;
 import com.williambl.elysium.machine.gravitator.GravitatorBlock;
 import com.williambl.elysium.machine.gravitator.GravitatorBlockEntity;
@@ -23,7 +21,6 @@ import net.minecraft.state.property.Property;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.util.registry.RegistryEntryListCodec;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -50,7 +47,7 @@ public interface ElysiumBlocks {
     Block ELECTRODE = createBlock("electrode", new ElectrodeBlock(AbstractBlock.Settings.copy(ELYSIUM_BLOCK).sounds(ElysiumSounds.ELYSIUM)), (b) -> new ElectrodeBlockItem(b, new Item.Settings()));
     BlockEntityType<ElysiumPrismBlockEntity> ELYSIUM_PRISM_BLOCK_ENTITY = (BlockEntityType)Registry.register(Registry.BLOCK_ENTITY_TYPE, Elysium.id("elysium_prism"), FabricBlockEntityTypeBuilder.create(ElysiumPrismBlockEntity::new, new Block[0]).addBlock(ELYSIUM_PRISM).build());
     BlockEntityType<GravitatorBlockEntity> GRAVITATOR_BE = (BlockEntityType)Registry.register(Registry.BLOCK_ENTITY_TYPE, Elysium.id("gravitator"), FabricBlockEntityTypeBuilder.create(GravitatorBlockEntity::new, new Block[]{GRAVITATOR, REPULSOR}).build());
-    BlockEntityType<ElectrodeBlockEntity> ELECTRODE_BE = (BlockEntityType)Registry.register(Registry.BLOCK_ENTITY_TYPE, Elysium.id("electrode"), FabricBlockEntityTypeBuilder.create(ElectrodeBlockEntity::new, new Block[]{ELECTRODE}).build());
+    BlockEntityType<ElectrodeBlock> ELECTRODE_BE = (BlockEntityType)Registry.register(Registry.BLOCK_ENTITY_TYPE, Elysium.id("electrode"), FabricBlockEntityTypeBuilder.create(ElectrodeBlock::new, new Block[]{ELECTRODE}).build());
     static void init() {
         BLOCKS.forEach((block, id) -> Registry.register(Registry.BLOCK, id, block));
 

@@ -17,7 +17,7 @@ import java.util.OptionalInt;
 
 public class JetEnchantment extends Enchantment implements CustomEnchantment, CheirosiphonFlameDivergenceCallback, CheirosiphonFlameSpeedCallback, CheirosiphonFlameSpawningCallback, HeatingItemHeatCallback {
     public JetEnchantment() {
-        super(Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot.MAINHAND[]{EquipmentSlot.MAINHAND});
+        super(Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[]{EquipmentSlot.MAINHAND});
         CheirosiphonFlameDivergenceCallback.EVENT.register(this);
         CheirosiphonFlameSpeedCallback.EVENT.register(this);
         CheirosiphonFlameSpawningCallback.EVENT.register(this);

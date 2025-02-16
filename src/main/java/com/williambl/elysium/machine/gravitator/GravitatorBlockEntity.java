@@ -18,6 +18,7 @@ import net.minecraft.util.math.*;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Optional;
 import java.util.function.Predicate;
 
 public class GravitatorBlockEntity extends BlockEntity implements BeamPowered {
@@ -114,7 +115,9 @@ public class GravitatorBlockEntity extends BlockEntity implements BeamPowered {
 
     private static double getMagnetism(Entity entity) {
         double entityMagnetism = ElysiumBlocks.ENTITY_MAGNETISM.get(entity.getType()).compareTo(1.0D);
-        double itemMagnetism = ElysiumUtil.getItemForEntity(entity).flatMap(ElysiumBlocks.ITEM_MAGNETISM::get).orElse(0.0D);
+        double itemMagnetism = ElysiumUtil.getItemForEntity(entity)
+                .flatMap(item -> Optional.ofNullable(ElysiumBlocks.ITEM_MAGNETISM.get(item)))
+                .orElse(0.0D);
         double var10000;
         if (entity instanceof LivingEntity) {
             LivingEntity lE = (LivingEntity)entity;
@@ -131,7 +134,7 @@ public class GravitatorBlockEntity extends BlockEntity implements BeamPowered {
         double count = 0.0D;
 
         for(ItemStack armour : entity.getArmorItems()) {
-            count += ElysiumBlocks.ITEM_MAGNETISM.get(armour.getItem()).orElse(0.0D);
+            count += ElysiumBlocks.ITEM_MAGNETISM.get(armour.getItem());
         }
 
         return count;

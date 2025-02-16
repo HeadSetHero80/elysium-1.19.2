@@ -1,7 +1,6 @@
 package com.williambl.elysium.cheirosiphon;
 
 import com.williambl.elysium.Elysium;
-import net.minecraft.data.server.AdvancementProvider;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -22,7 +21,7 @@ import org.jetbrains.annotations.NotNull;
 public class CheirosiphonFlame extends ThrownItemEntity {
     private static final TrackedData<Boolean> CONCENTRATED_ID = DataTracker.registerData(CheirosiphonFlame.class, TrackedDataHandlerRegistry.BOOLEAN);
 
-    public CheirosiphonFlame(EntityType<CheirosiphonFlame> entityEntityType, World world){
+    public CheirosiphonFlame(EntityType<CheirosiphonFlame> entityEntityType, @NotNull LivingEntity user, World world){
         super((EntityType<? extends ThrownItemEntity>) entityEntityType, world);
         this.setPosition(this.getX(), this.getY() - (double)(this.getHeight() / 2.0F), this.getZ());
     }

@@ -26,6 +26,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 public class CheirosiphonItem extends Item implements HeatingItem {
     private static final int MAX_USE_TICKS = 100;
@@ -132,13 +133,15 @@ public class CheirosiphonItem extends Item implements HeatingItem {
         public static final Identifier PACKET_ID = Elysium.id("cheirosiphon_airblast_fx");
 
         public static void sendToTracking(Entity entity, Vec3d direction, Vec3d spawnPosition) {
-            ServerPlayNetworking.send((Collection) Util.make(new ArrayList(PlayerLookup.tracking(entity)), (c) -> {
-                if (entity instanceof ServerPlayerEntity) {
-                    ServerPlayerEntity s = (ServerPlayerEntity) entity;
-                    c.add(s);
-                }
+            List<ServerPlayerEntity> players = new ArrayList<>(PlayerLookup.tracking(entity));
 
-            }), PACKET_ID, create(direction, spawnPosition));
+            if (entity instanceof ServerPlayerEntity) {
+                players.add((ServerPlayerEntity) entity);
+            }
+
+            for (ServerPlayerEntity player : players) {
+                ServerPlayNetworking.send(player, PACKET_ID, create(direction, spawnPosition));
+            }
         }
 
         public static void sendToTracking(Entity entity) {
@@ -148,7 +151,13 @@ public class CheirosiphonItem extends Item implements HeatingItem {
         }
 
         public static PacketByteBuf create(Vec3d direction, Vec3d spawnPosition) {
-            return new PacketByteBuf(PacketByteBufs.create().writeDouble(direction.getX()).writeDouble(direction.getY()).writeDouble(direction.getZ()).writeDouble(spawnPosition.getX()).writeDouble(spawnPosition.getY()).writeDouble(spawnPosition.getZ()));
+            return new PacketByteBuf(PacketByteBufs.create()
+                    .writeDouble(direction.getX())
+                    .writeDouble(direction.getY())
+                    .writeDouble(direction.getZ())
+                    .writeDouble(spawnPosition.getX())
+                    .writeDouble(spawnPosition.getY())
+                    .writeDouble(spawnPosition.getZ()));
         }
     }
 

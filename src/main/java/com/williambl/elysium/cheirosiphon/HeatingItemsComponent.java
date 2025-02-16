@@ -62,24 +62,35 @@ public class HeatingItemsComponent implements Component, CommonTickingComponent,
     public void tick() {
         boolean needsSync = false;
 
-        for(HeatingItem item : new ArrayList(this.heats.keySet())) {
-            Hand hand = getHand(this.player, (Item)item);
+        for (HeatingItem item : new ArrayList<>(this.heats.keySet())) {
+            Hand hand = getHand(this.player, (Item) item);
             boolean isUsing = hand == this.player.getActiveHand() && this.player.isUsingItem();
-            int newHeat = this.heats.compute(item, (k, v) -> v == null ? 0 : ((HeatingItemHeatCallback)HeatingItemHeatCallback.EVENT.invoker()).getHeat(item, v, this.player, hand, isUsing).orElseGet(() -> item.getHeat(v, this.player, hand, isUsing)));
+
+            int newHeat = this.heats.compute(item, (k, v) -> {
+                if (v == null) {
+                    return 0;
+                } else {
+                    return HeatingItemHeatCallback.EVENT.invoker()
+                            .getHeat(item, v, this.player, hand, isUsing)
+                            .orElseGet(() -> item.getHeat(v, this.player, hand, isUsing));
+                }
+            });
+
             if (newHeat <= 0 && !isUsing) {
                 this.heats.remove(item);
                 this.overheatedItems.remove(item);
                 needsSync = true;
             } else if (newHeat >= item.getMaxHeat()) {
-                this.overheatedItems.add(item);
-                needsSync = true;
+                if (item instanceof HeatingItem) {
+                    this.overheatedItems.add((HeatingItem) item);
+                    needsSync = true;
+                }
             }
         }
 
         if (needsSync && !this.player.getWorld().isClient()) {
             KEY.sync(this.player);
         }
-
     }
 
     @Nullable
